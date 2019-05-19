@@ -1,0 +1,652 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Pembelajaran Data Mining">
+      
+      
+        <link rel="canonical" href="https:///rivai72.github.io/170441100095-DataMining/">
+      
+      
+        <meta name="author" content="Muhammad Rafi Rivai Putra">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Data Mining</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#4caf50">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#k-means-clustering" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https:///rivai72.github.io/170441100095-DataMining/" title="Data Mining" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Data Mining
+            </span>
+            <span class="md-header-nav__topic">
+              Metode Clustering
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com//rivai72/170441100095-DataMining" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Data Mining
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="." title="Metode Clustering" class="md-tabs__link md-tabs__link--active">
+        Metode Clustering
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https:///rivai72.github.io/170441100095-DataMining/" title="Data Mining" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Data Mining
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com//rivai72/170441100095-DataMining" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Data Mining
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Metode Clustering
+      </label>
+    
+    <a href="." title="Metode Clustering" class="md-nav__link md-nav__link--active">
+      Metode Clustering
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pengertian-k-means-clustering" title="**Pengertian K-Means Clustering **" class="md-nav__link">
+    **Pengertian K-Means Clustering **
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#karakteristik-k-mean" title="Karakteristik K-Mean" class="md-nav__link">
+    Karakteristik K-Mean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kelebihan-dan-kekurangan-k-means" title="Kelebihan dan Kekurangan K-Means" class="md-nav__link">
+    Kelebihan dan Kekurangan K-Means
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi-progam-k-means-clustering" title="IMPLEMENTASI PROGAM K - MEANS CLUSTERING" class="md-nav__link">
+    IMPLEMENTASI PROGAM K - MEANS CLUSTERING
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-anaconda" title="- ANACONDA" class="md-nav__link">
+    - ANACONDA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-spyder" title="- SPYDER" class="md-nav__link">
+    - SPYDER
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="authors-notes/" title="Biodata" class="md-nav__link">
+      Biodata
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="license/" title="Metode KNN" class="md-nav__link">
+      Metode KNN
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="tambahan/" title="Metode Decision-Tree" class="md-nav__link">
+      Metode Decision-Tree
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pengertian-k-means-clustering" title="**Pengertian K-Means Clustering **" class="md-nav__link">
+    **Pengertian K-Means Clustering **
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#karakteristik-k-mean" title="Karakteristik K-Mean" class="md-nav__link">
+    Karakteristik K-Mean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kelebihan-dan-kekurangan-k-means" title="Kelebihan dan Kekurangan K-Means" class="md-nav__link">
+    Kelebihan dan Kekurangan K-Means
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi-progam-k-means-clustering" title="IMPLEMENTASI PROGAM K - MEANS CLUSTERING" class="md-nav__link">
+    IMPLEMENTASI PROGAM K - MEANS CLUSTERING
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-anaconda" title="- ANACONDA" class="md-nav__link">
+    - ANACONDA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-spyder" title="- SPYDER" class="md-nav__link">
+    - SPYDER
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="k-means-clustering">K-Means Clustering<a class="headerlink" href="#k-means-clustering" title="Permanent link">&para;</a></h1>
+<h4 id="pengertian-k-means-clustering">**Pengertian K-Means Clustering **<a class="headerlink" href="#pengertian-k-means-clustering" title="Permanent link">&para;</a></h4>
+<p><strong>K-Means Clustering</strong> adalah metode  <strong>unsupervised learning</strong>. Yang dimana, digunakan pada data yang tidak memiliki label. Tujuan dari metode unsupervised learning salah satunya adalah melakukan clustering. Yaitu mengelompokkan data-data dengan karakter mirip.  </p>
+<p>Untuk melakukan clustering Anda perlu algoritma yang mendukung untuk pengimplementasian dari metode tersebut, salah satunya K-means. Tujuan dari k-means sendiri membagi suatu data dalam beberapa cluster (kelompok) sebanyak <em>k,</em> yang dimana jumlah <em>k-nya</em> ditentukan oleh Anda dan diwakili oleh <a href="https://id.wikipedia.org/wiki/Rata-rata"><strong><em>Mean (Rata-rata)</em></strong></a>. <em>Mean</em> dari setiap <em>cluster</em> di asumsikan sebagai ringkasan yang baik dari setiap observasi dari <em>cluster</em> tersebut.</p>
+<p>Dan, pada <strong>K-Means Clustering</strong> memiliki dua jenis data clustering yang sering dipergunakan dalam proses pengelompokan data yaitu <strong>Hierarchical</strong> dan <strong>Non-Hierarchical</strong>. Dan <strong>K-Means</strong> merupakan salah satu metode data clustering non-hierarchical atau <strong>Partitional Clustering</strong>.</p>
+<p><img alt="" src="assets/images/HierarPartClustering-800x306.png" /></p>
+<p>Metode <strong>K-Means Clustering</strong> berusaha mengelompokkan data yang ada ke dalam beberapa kelompok, dimana data dalam satu kelompok mempunyai karakteristik yang sama satu sama lainnya dan mempunyai karakteristik yang berbeda dengan data yang ada di dalam kelompok yang lain.</p>
+<p><img alt="" src="assets/images/hierarchical-clustering.jpg" /></p>
+<p>Dengan kata lain, metode <strong>K-Means Clustering</strong> bertujuan untuk meminimalisasikan <strong>objective function</strong> yang diset dalam proses clustering dengan cara <strong>meminimalkan variasi antar data yang ada di dalam suatu cluster dan memaksimalkan variasi dengan data yang ada di cluster lainnya</strong>.</p>
+<p><img alt="" src="assets/images/contoh-cluster.jpg" /></p>
+<h4 id="karakteristik-k-mean"><strong>Karakteristik K-Mean</strong><a class="headerlink" href="#karakteristik-k-mean" title="Permanent link">&para;</a></h4>
+<ol>
+<li>K-means sangat cepat dalam proses clustering.</li>
+<li>K-means sangat sensitive pada pembangkitan centroid awal secara random.</li>
+<li>Memungkinkan suatu cluster tidak mempunyai anggota.</li>
+<li>Hasil clustering dengan K-means bersifat unik (selalu berubah-ubah, terkadang baik, terkadang jelek).</li>
+</ol>
+<h4 id="kelebihan-dan-kekurangan-k-means"><strong>Kelebihan dan Kekurangan K-Means</strong><a class="headerlink" href="#kelebihan-dan-kekurangan-k-means" title="Permanent link">&para;</a></h4>
+<p><strong>- Kelebihan</strong></p>
+<ol>
+<li>Menggunakan prinsip yang sederhana, dapat dijelaskan dalam non-statistik</li>
+<li>Sangat fleksibel, dapat dengan mudah di adaptasi.</li>
+<li>Sangat umum digunakan</li>
+<li>Waktu yang dibutuhkan untuk menjalankan nya relatif cepat</li>
+</ol>
+<p><strong>- Kekurangan</strong> </p>
+<ol>
+<li>Karena menggunakan k buah acak, tidak di jamin untuk menemukan kumpulan cluster yang optimal.</li>
+<li>Tidak optimal digunakan untuk data yang jumlahnya terlalu banyak sampai bermiliyar.</li>
+<li>Dapat terjadinya curse of dimensionality, apabila jarak antara cluster yang satu dengan yang lain memiliki banyak dimesi.</li>
+</ol>
+<h4 id="implementasi-progam-k-means-clustering"><strong>IMPLEMENTASI PROGAM K - MEANS CLUSTERING</strong><a class="headerlink" href="#implementasi-progam-k-means-clustering" title="Permanent link">&para;</a></h4>
+<p>Di sini, untuk pengimplementasian program saya menggunakan data berupa <strong>diabetes datasets</strong>. Selain data, pengimplementasian membutuhkan software untuk melakukan, pengcodingan program dan di sini saya menggunakan software <strong><em>spyder</em></strong> yang terkoneksi di dalam software <strong><em>anaconda</em></strong>. Alasan saya memilih software spyder, karena pada software spyder yang berada di dalam anaconda, librarynya telah terinstall semua. Tidak seperti pycharm yang harus menginstall librarynya secara manual terlebih dahulu.</p>
+<h4 id="-anaconda">- ANACONDA<a class="headerlink" href="#-anaconda" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="assets/images/anaconda_logo.png" /></p>
+<h4 id="-spyder">- SPYDER<a class="headerlink" href="#-spyder" title="Permanent link">&para;</a></h4>
+<p><img alt="spyder-icon-1024x1024" src="assets/images/spyder-icon-1024x1024.png" /></p>
+<p><strong>"LANGKAH - LANGKAH CODING"</strong></p>
+<p>​        <strong>- Pertama</strong></p>
+<p>​                  Lakukan pengimportan library dari python seperti :</p>
+<p>​                   <strong>-</strong> Numpy    -&gt; Untuk operasi vektor dan matriks</p>
+<p>​                   <strong>-</strong> Pandas    -&gt; Untuk memuat sebuah file ke dalam tabel virtual seperti spreadsheet.</p>
+<p>​                   <strong>-</strong> Matpolib -&gt; Untuk menyajikan visualisasi data cluster</p>
+<p>​                   <strong>-</strong> Sklearn    -&gt; Untuk mengimport library data science</p>
+<pre class="codehilite"><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.cluster import KMeans</code></pre>
+
+<p>​      <strong>- Kedua</strong></p>
+<pre class="codehilite"><code class="language-python">dataset = pd.read_csv('diabetes.csv')
+x = dataset.iloc[:, [1, 2, 3, 4]].values
+wcss = []</code></pre>
+
+<p>Penjelasan :</p>
+<p>​    Coding di atas berfungsing untuk memanggil datasests diabetes. Dan juga untuk memilih baris dan kolom berdasarkan nomer, sesuai urutan bingkai datanya. Dan coding baris terakhir berfungsi untuk memaksimalkan jarak cluster.</p>
+<p>​      <strong>- Ketiga</strong></p>
+<pre class="codehilite"><code class="language-python">for i in range(1, 11):
+    kmeans = KMeans(n_clusters = i, init = 'k-means++', max_iter = 300, n_init = 10, random_state = 0)
+    kmeans.fit(x)
+    wcss.append(kmeans.inertia_)
+
+#Plotting the results onto a line graph, allowing us to observe 'The elbow'
+plt.plot(range(1, 11), wcss)
+plt.title('The elbow method')
+plt.xlabel('Number of clusters')
+plt.ylabel('WCSS') #within cluster sum of squares
+plt.show()
+kmeans = KMeans(n_clusters = 3, init = 'k-means++', max_iter = 300, n_init = 10, random_state = 0)
+y_kmeans = kmeans.fit_predict(x)
+plt.scatter(x[y_kmeans == 0, 0], x[y_kmeans == 0, 1], s = 100, c = 'red', label = 'tested_positive')
+plt.scatter(x[y_kmeans == 1, 0], x[y_kmeans == 1, 1], s = 100, c = 'blue', label = 'tested_negative')
+
+#Plotting the centroids of the clusters
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:,1], s = 100, c = 'yellow', label = 'Centroids')
+
+plt.legend()</code></pre>
+
+<p>Penjelasan :</p>
+<p>​        Coding di atas, berfungsi untuk mengeksekusi dataset yang telah di panggil ke dalam program. Yang nantinya data itu, di kelompokkan masing - masing oleh program sesuai dengan inputan class masing - masing, antara tested positive atau tested negative. Dan untuk membedakan pengelompokkan antara class tested positive dan tested negative, mereka di berikan warna berbeda. Yaitu warna merah untuk tested positive sedangkan warna biru untuk tested negative. Sedangkan warna kuning berfungsi, untuk menampilkan pengelompokkan centroids dari seluruh data. Dan di dalam codingan di atas juga terdapat, coding yang berfungsi menampilkan elbow method. Elbow method berfungsi, membantu menemukan jumlah cluster yang tepat dalam dataset.</p>
+<p><strong>- Output Program -</strong></p>
+<p><img alt="" src="assets/images/Enyar.PNG" /></p>
+<p><img alt="" src="assets/images/Enyar2.PNG" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="authors-notes/" title="Biodata" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Biodata
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2019 Martin Donath
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+    
+      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/squidfunk" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/squidfunk" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/squidfunk" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.8c0d971c.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+  </body>
+</html>
